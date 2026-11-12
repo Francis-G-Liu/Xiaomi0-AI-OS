@@ -24,6 +24,7 @@ repo sync -c --no-tags -j8
 | `device/xiaomi/unicorn/prebuilt/boot/boot_official.img` | 192 MiB |
 | `device/xiaomi/unicorn/prebuilt/boot/recovery.img` | 100 MiB |
 | `device/xiaomi/unicorn/prebuilt/boot/vendor_boot.img` | 96 MiB |
+| `device/xiaomi/unicorn/prebuilt/dtbo/dtbo.img` | 23 MiB |
 
 这些镜像不参与 AOSP 编译，只用于刷机。需要时从原始移植包或设备固件重新获取，
 或发布在本仓库的 Releases 页面。
