@@ -1,0 +1,35 @@
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+
+on init
+    # Set permissions for system group
+    chown system system /sys/class/thermal/thermal_message/screenshot_enabled
+    chmod 0664 /sys/class/thermal/thermal_message/screenshot_enabled
+
+on boot
+    # Set permissions for system group
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/panel_info
+
+    # Trusted touch
+    chown system /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
+    chmod 0660 /sys/devices/platform/soc/990000.i2c/i2c-0/0-0038/trusted_touch_enable
+    chown system /sys/devices/platform/soc/990000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+    chmod 0660 /sys/devices/platform/soc/990000.spi/spi_master/spi0/spi0.0/trusted_touch_enable
+    chown system /sys/devices/platform/soc/980000.i2c/i2c-0/0-0062/trusted_touch_enable
+    chmod 0660 /sys/devices/platform/soc/980000.i2c/i2c-0/0-0062/trusted_touch_enable
+    chown system /sys/devices/platform/soc/980000.i2c/i2c-0/0-0062/trusted_touch_event
+    chmod 0660 /sys/devices/platform/soc/980000.i2c/i2c-0/0-0062/trusted_touch_event
+
+    # Set permissions for system group
+    chown system system /sys/devices/virtual/touch/tp_dev/fp_state
+    chmod 0660 /sys/devices/virtual/touch/tp_dev/fp_state
+
+    # Set permissions for system group
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/panel_info
+
+    # Set permissions for system group
+    chown system system /sys/class/mi_display/disp-DSI-0/panel_info
+    chmod 0444 /sys/class/mi_display/disp-DSI-0/panel_info
