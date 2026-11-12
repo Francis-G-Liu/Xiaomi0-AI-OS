@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Build output
+out/
+
+# Prebuilt images / firmware (hosted separately)
+*.img
+*.img.zst
+*.img.gz
+prebuilt_images/
+images/
+
+# Oversized vendor blob (> GitHub 100 MiB limit)
+vendor/xiaomi/unicorn/proprietary/vendor/lib64/libxmi_high_dynamic_range_cdsp.so
